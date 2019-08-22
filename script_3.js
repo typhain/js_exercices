@@ -1,6 +1,8 @@
-let size = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?")
-let n='#'
+console.log("Salut, bienvenue dans mon super programme de pyramide de la NASA")
+  let nombre = prompt("combien d'étages veux-tu dans ta pyramide ?")
+  diese = "#"
+  espace = " "
 
-   for(let i=1; i<=size; i++){
-    console.log(n.repeat(i))
-    }
+  for(let i = 0; i <= nombre; i++) {
+      console.log(espace.repeat(nombre - (i+1)) + diese.repeat(i+1));
+  }

@@ -13,13 +13,20 @@ const books = [
   { title: 'Guerre et Paix', id: 748147, rented: 19 }
 ];
 
-for (let index in books) {
-  if (books[index].rented >= 1){
-  console.log("Oui, tous les livres ont été empruntés au moins une fois");
-  } else {
-  console.log("Non, certains livres n'ont jamais été empruntés");
-  }
+repeatNum = 70
+console.log("-".repeat(repeatNum))
+console.log("1. Est-ce que tous les livres ont été au moins empruntés une fois ?")
+
+function ispositive(element) {return element > 0;
 }
+  array = []
+  for (let book in books) {
+    array.push(books[book].rented)}
+
+if (array.every(ispositive))
+    console.log("Tous les livres ont été empruntés aux moins une fois :)")
+    else
+    console.log("Tous les livres n'ont pas été empruntés au moins une fois :(")
 
 array =[]
 for (let index in books) {
@@ -33,6 +40,9 @@ for (let index in books) {
     result = books[index].title
   }
   }
+
+
+console.log("-".repeat(repeatNum))
 console.log("le livre le plus emprunté est :")
 console.log(result)
 
@@ -48,6 +58,7 @@ for (let index in books) {
     result = books[index].title
   }
   }
+console.log("-".repeat(repeatNum))
 console.log("le livre le moins emprunté est :")
 console.log(result)
 
@@ -56,6 +67,7 @@ for (let index in books) {
     result = (books[index].title)
     }
   }
+console.log("-".repeat(repeatNum))
 console.log("le livre dont l'id est 873495 a pour titre:")
 console.log(result)
 
@@ -70,6 +82,7 @@ books.splice(index,1);
 newArr = books
 console.log(newArr)
 
+console.log("-".repeat(repeatNum))
 console.log ("rangement des livres par ordre alpahbétique")
 array =[]
 for (let index in books) {
