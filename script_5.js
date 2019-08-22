@@ -50,3 +50,29 @@ for (let index in books) {
   }
 console.log("le livre le moins emprunté est :")
 console.log(result)
+
+for (let index in books) {
+  if (books[index].id === 873495){
+    result = (books[index].title)
+    }
+  }
+console.log("le livre dont l'id est 873495 a pour titre:")
+console.log(result)
+
+console.log("suppression du livre avec l'id 133712")
+for (let index in books) {
+  if (books[index].id === 133712){
+    result = (books[index])
+    }
+  }
+index = books.indexOf(result);
+books.splice(index,1);
+newArr = books
+console.log(newArr)
+
+console.log ("rangement des livres par ordre alpahbétique")
+array =[]
+for (let index in books) {
+  array.push(newArr[index].title)
+   }
+console.log(array.sort())
