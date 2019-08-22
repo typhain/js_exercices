@@ -75,4 +75,4 @@ array =[]
 for (let index in books) {
   array.push(newArr[index].title)
    }
-console.log(array.sort())
+console.log(array.sort().join())
