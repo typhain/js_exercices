@@ -41,7 +41,6 @@ for (let index in books) {
   }
   }
 
-
 console.log("-".repeat(repeatNum))
 console.log("le livre le plus emprunté est :")
 console.log(result)
